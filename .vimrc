@@ -34,6 +34,12 @@ map <C-n> :NERDTreeToggle<CR>
 " include matchit.vim to traverse tags
 :so ~/.vim/plugin/matchit.vim
 
+" Enable code folding
+set foldmethod=indent   
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+
 " Syntastic configurations
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -50,3 +56,8 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " ignore case when searching
 set ignorecase
+
+" ctrlp should ignore node_modules and .git
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.git|node_modules)$',
+  \ }
