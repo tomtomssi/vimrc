@@ -16,6 +16,9 @@ filetype plugin indent on
 " " On pressing tab, insert 4 spaces
   set expandtab
 
+" Windows should open to the right by default
+set splitright
+
 " Show current line number
 set number
 
@@ -51,13 +54,13 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" ctrp fuzzy search
+" ctrlp fuzzy search
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-
-" ignore case when searching
-set ignorecase
 
 " ctrlp should ignore node_modules and .git
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.git|node_modules)$',
   \ }
+
+" ignore case when searching
+set ignorecase
