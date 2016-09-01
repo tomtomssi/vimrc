@@ -71,3 +71,6 @@ let g:ctrlp_custom_ignore = {
 
 " ignore case when searching
 set ignorecase
+
+" YCM compiled with python2 so it should be ran with it
+let g:ycm_server_python_interpreter = '/usr/bin/python'
