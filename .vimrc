@@ -61,6 +61,10 @@ nnoremap <space>gca :Gcommit -a -v -q<CR>
 nnoremap <space>gp :Gpush<CR>
 nnoremap <space>go :Git checkout<CR>
 
+" Expand region keymapping
+map J <Plug>(expand_region_expand)
+map K <Plug>(expand_region_shrink)
+
 " ctrlp fuzzy search
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
