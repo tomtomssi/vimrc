@@ -60,6 +60,8 @@ nnoremap <space>gc :Gcommit -v -q<CR>
 nnoremap <space>gca :Gcommit -a -v -q<CR>
 nnoremap <space>gp :Gpush<CR>
 nnoremap <space>go :Git checkout<CR>
+nnoremap <space>gr :Gread<CR>
+nnoremap <space>gd :Gdiff<CR>
 
 " Expand region keymapping
 map J <Plug>(expand_region_expand)
