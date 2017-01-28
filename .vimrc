@@ -72,7 +72,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " ctrlp should ignore node_modules and .git
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.git|node_modules)$',
+  \ 'dir':  '\v[\/](\.git|node_modules|dist)$',
   \ }
 
 " ignore case when searching
