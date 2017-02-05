@@ -66,6 +66,9 @@ nnoremap <space>go :Git checkout<CR>
 nnoremap <space>gr :Gread<CR>
 nnoremap <space>gd :Gdiff<CR>
 
+" Search and replace mapped to ctrl r in visual mode
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>"
+
 " Expand region keymapping
 map J <Plug>(expand_region_expand)
 map K <Plug>(expand_region_shrink)
