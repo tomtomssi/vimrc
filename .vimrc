@@ -8,6 +8,9 @@ autocmd vimenter * NERDTree
 " Close NERDTree when the last window closes
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Allow NERDTree to always show hidden files
+let NERDTreeShowHidden=1
+
 filetype plugin indent on
 " show existing tab with 4 spaces width
   set tabstop=4
