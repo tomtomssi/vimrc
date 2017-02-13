@@ -86,3 +86,6 @@ set ignorecase
 
 " YCM compiled with python2 so it should be ran with it
 let g:ycm_server_python_interpreter = '/usr/bin/python'
+
+" Use 256 color term to fix background issues in tmux
+set term=screen-256color
