@@ -26,7 +26,7 @@ set splitright
 set number
 
 " Show current file name on the status line
-set statusline+=%f
+" set statusline+=%f
 
 " Show relative line numbers
 set relativenumber
